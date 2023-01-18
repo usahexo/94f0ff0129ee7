@@ -106,6 +106,8 @@
 				    
 				    <li><a href="/categories/Solutions/" class="animsition-link">Solutions<small>(2)</small></a></li>
 				    
+				    <li><a href="/categories/Video-Slots/" class="animsition-link">Video Slots<small>(1)</small></a></li>
+				    
 				    <li><a href="/categories/doubleu-casino/" class="animsition-link">doubleu casino<small>(3)</small></a></li>
 				    
 				</ul>
@@ -124,15 +126,15 @@
 				    
 				    <li><a href="/tags/Online-Games/" class="animsition-link">Online Games<small>(1)</small></a></li>
 				    
-				    <li><a href="/tags/baccarat/" class="animsition-link">baccarat<small>(1)</small></a></li>
+				    <li><a href="/tags/baccarat/" class="animsition-link">baccarat<small>(2)</small></a></li>
 				    
-				    <li><a href="/tags/casino-game/" class="animsition-link">casino game<small>(1)</small></a></li>
+				    <li><a href="/tags/casino-game/" class="animsition-link">casino game<small>(2)</small></a></li>
 				    
-				    <li><a href="/tags/doubleu-casino/" class="animsition-link">doubleu casino<small>(1)</small></a></li>
+				    <li><a href="/tags/doubleu-casino/" class="animsition-link">doubleu casino<small>(2)</small></a></li>
 				    
-				    <li><a href="/tags/online-casino/" class="animsition-link">online casino<small>(1)</small></a></li>
+				    <li><a href="/tags/online-casino/" class="animsition-link">online casino<small>(2)</small></a></li>
 				    
-				    <li><a href="/tags/poker/" class="animsition-link">poker<small>(1)</small></a></li>
+				    <li><a href="/tags/poker/" class="animsition-link">poker<small>(2)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -328,7 +330,24 @@ $('#intro').find('img').each(function(){
       
 </body>
 </html>
-ncybox" rel="gallery" />');
+Hero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
 });
 (function($){
   $('.fancybox').fancybox();
